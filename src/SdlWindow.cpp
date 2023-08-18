@@ -45,7 +45,7 @@ double SdlWindow::getCurrentTime() {
 
 void SdlWindow::GameLoop(){
 
-    Player* player = new Player(renderer, "../res/player.png");
+    Player* player = new Player(renderer, "../res/player.png", 10, 10, {100, 100});
 
     gameObjects.push_back(player);
 
