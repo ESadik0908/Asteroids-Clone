@@ -1,5 +1,6 @@
 #include "Player.hpp"
 #include "SDL_image.h"
+#include "SDL.h"
 #include "string"
 
 Player::Player(SDL_Renderer *renderer ,std::string imagePath, int width, int height, SDL_FPoint center)
@@ -18,8 +19,10 @@ Player::~Player()
 }
 
 void Player::Draw(SDL_Renderer *renderer){
-    SDL_RenderSetViewport(renderer, &hitbox);
-    SDL_RenderCopy(renderer, this->texture, NULL, NULL);
+    // SDL_RenderSetViewport(renderer, &hitbox);
+    // SDL_RenderCopy(renderer, this->texture, NULL, NULL);
+    SDL_SetRenderDrawColor(renderer, 255 , 0, 0, 255);
+    SDL_RenderDrawRect(renderer, &hitbox);
 }
 
 void Player::Update(){
