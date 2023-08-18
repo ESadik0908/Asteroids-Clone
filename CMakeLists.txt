@@ -7,7 +7,6 @@ add_executable(Asteroids
     src/SdlWindow.cpp
     src/GameObject.cpp
     src/Player.cpp
-    src/Quad.cpp
 )
 
 if(NOT PNG AND WIN32 AND NOT MSVC)

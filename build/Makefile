@@ -176,30 +176,6 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
-src/Quad.obj: src/Quad.cpp.obj
-.PHONY : src/Quad.obj
-
-# target to build an object file
-src/Quad.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/Quad.cpp.obj
-.PHONY : src/Quad.cpp.obj
-
-src/Quad.i: src/Quad.cpp.i
-.PHONY : src/Quad.i
-
-# target to preprocess a source file
-src/Quad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/Quad.cpp.i
-.PHONY : src/Quad.cpp.i
-
-src/Quad.s: src/Quad.cpp.s
-.PHONY : src/Quad.s
-
-# target to generate assembly for a file
-src/Quad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/Quad.cpp.s
-.PHONY : src/Quad.cpp.s
-
 src/SdlWindow.obj: src/SdlWindow.cpp.obj
 .PHONY : src/SdlWindow.obj
 
@@ -263,9 +239,6 @@ help:
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
-	@echo ... src/Quad.obj
-	@echo ... src/Quad.i
-	@echo ... src/Quad.s
 	@echo ... src/SdlWindow.obj
 	@echo ... src/SdlWindow.i
 	@echo ... src/SdlWindow.s

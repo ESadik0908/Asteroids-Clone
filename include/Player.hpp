@@ -2,12 +2,12 @@
 #include "string"
 #include "SDL.h"
 #include "GameObject.hpp"
-#include "Quad.hpp"
+
 
 class Player : public GameObject
 {
 private:
-    Quad hitbox;
+    SDL_Rect hitbox;
 public:
     Player(SDL_Renderer *renderer ,std::string imagePath, int width, int height, SDL_FPoint center);
     ~Player();

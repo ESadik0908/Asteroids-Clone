@@ -324,4 +324,5 @@ CMakeFiles/Asteroids.dir/src/main.cpp.obj: \
  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
- C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc
+ C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+ D:/Projects/C++/Asteroids/include/Consts.hpp

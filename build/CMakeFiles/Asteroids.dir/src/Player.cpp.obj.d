@@ -285,10 +285,4 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: \
  C:/PROGRA~2/SDL2_I~1/include/SDL2/SDL_image.h \
  C:/PROGRA~2/SDL2/include/SDL2/SDL_version.h \
  C:/PROGRA~2/SDL2/include/SDL2/begin_code.h \
- C:/PROGRA~2/SDL2/include/SDL2/close_code.h \
- D:/Projects/C++/Asteroids/include/Quad.hpp \
- C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
- C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
- C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
- C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
- C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc
+ C:/PROGRA~2/SDL2/include/SDL2/close_code.h

@@ -8,6 +8,7 @@
 #include "SdlWindow.hpp"
 #include "GameObject.hpp"
 #include "Player.hpp"
+#include "Consts.hpp"
 
 
 SdlWindow::SdlWindow(int height_, int width_): height(height_), width(width_){
@@ -45,7 +46,7 @@ double SdlWindow::getCurrentTime() {
 
 void SdlWindow::GameLoop(){
 
-    Player* player = new Player(renderer, "../res/player.png", 10, 10, {100, 100});
+    Player* player = new Player(renderer, "../res/player.png", 100, 100, {SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2});
 
     gameObjects.push_back(player);
 

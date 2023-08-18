@@ -339,4 +339,4 @@ CMakeFiles/Asteroids.dir/src/SdlWindow.cpp.obj: \
  C:/PROGRA~2/SDL2/include/SDL2/begin_code.h \
  C:/PROGRA~2/SDL2/include/SDL2/close_code.h \
  D:/Projects/C++/Asteroids/include/Player.hpp \
- D:/Projects/C++/Asteroids/include/Quad.hpp
+ D:/Projects/C++/Asteroids/include/Consts.hpp
