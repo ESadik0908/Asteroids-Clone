@@ -1,0 +1,32 @@
+[
+{
+  "directory": "D:/Projects/C++/Asteroids/build",
+  "command": "C:\\MinGW\\x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/Asteroids.dir/includes_CXX.rsp -g -o CMakeFiles\\Asteroids.dir\\src\\main.cpp.obj -c D:\\Projects\\C++\\Asteroids\\src\\main.cpp",
+  "file": "D:/Projects/C++/Asteroids/src/main.cpp",
+  "output": "CMakeFiles/Asteroids.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/Projects/C++/Asteroids/build",
+  "command": "C:\\MinGW\\x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/Asteroids.dir/includes_CXX.rsp -g -o CMakeFiles\\Asteroids.dir\\src\\SdlWindow.cpp.obj -c D:\\Projects\\C++\\Asteroids\\src\\SdlWindow.cpp",
+  "file": "D:/Projects/C++/Asteroids/src/SdlWindow.cpp",
+  "output": "CMakeFiles/Asteroids.dir/src/SdlWindow.cpp.obj"
+},
+{
+  "directory": "D:/Projects/C++/Asteroids/build",
+  "command": "C:\\MinGW\\x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/Asteroids.dir/includes_CXX.rsp -g -o CMakeFiles\\Asteroids.dir\\src\\GameObject.cpp.obj -c D:\\Projects\\C++\\Asteroids\\src\\GameObject.cpp",
+  "file": "D:/Projects/C++/Asteroids/src/GameObject.cpp",
+  "output": "CMakeFiles/Asteroids.dir/src/GameObject.cpp.obj"
+},
+{
+  "directory": "D:/Projects/C++/Asteroids/build",
+  "command": "C:\\MinGW\\x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/Asteroids.dir/includes_CXX.rsp -g -o CMakeFiles\\Asteroids.dir\\src\\Player.cpp.obj -c D:\\Projects\\C++\\Asteroids\\src\\Player.cpp",
+  "file": "D:/Projects/C++/Asteroids/src/Player.cpp",
+  "output": "CMakeFiles/Asteroids.dir/src/Player.cpp.obj"
+},
+{
+  "directory": "D:/Projects/C++/Asteroids/build",
+  "command": "C:\\MinGW\\x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/Asteroids.dir/includes_CXX.rsp -g -o CMakeFiles\\Asteroids.dir\\src\\Quad.cpp.obj -c D:\\Projects\\C++\\Asteroids\\src\\Quad.cpp",
+  "file": "D:/Projects/C++/Asteroids/src/Quad.cpp",
+  "output": "CMakeFiles/Asteroids.dir/src/Quad.cpp.obj"
+}
+]
