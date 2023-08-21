@@ -1,18 +1,20 @@
 #pragma once
 #include "SDL.h"
 #include "SDL_image.h"
+#include "Vector2.hpp"
+
 class GameObject
 {
 private:
     
 public:
-    SDL_FPoint center;
+    Vector2 position;
     int width, height;
     SDL_Rect hitbox;
     SDL_Surface* surface;
     SDL_Texture* texture;
     GameObject();
-    GameObject(int width, int height, SDL_FPoint center);
+    GameObject(int width, int height, Vector2 center);
     ~GameObject();
 
     virtual void Draw(SDL_Renderer *renderer) = 0;

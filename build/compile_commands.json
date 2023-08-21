@@ -22,5 +22,11 @@
   "command": "C:\\MinGW\\x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/Asteroids.dir/includes_CXX.rsp -g -o CMakeFiles\\Asteroids.dir\\src\\Player.cpp.obj -c D:\\Projects\\C++\\Asteroids\\src\\Player.cpp",
   "file": "D:/Projects/C++/Asteroids/src/Player.cpp",
   "output": "CMakeFiles/Asteroids.dir/src/Player.cpp.obj"
+},
+{
+  "directory": "D:/Projects/C++/Asteroids/build",
+  "command": "C:\\MinGW\\x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/Asteroids.dir/includes_CXX.rsp -g -o CMakeFiles\\Asteroids.dir\\src\\Vector2.cpp.obj -c D:\\Projects\\C++\\Asteroids\\src\\Vector2.cpp",
+  "file": "D:/Projects/C++/Asteroids/src/Vector2.cpp",
+  "output": "CMakeFiles/Asteroids.dir/src/Vector2.cpp.obj"
 }
 ]

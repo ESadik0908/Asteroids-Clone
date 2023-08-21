@@ -320,6 +320,7 @@ CMakeFiles/Asteroids.dir/src/main.cpp.obj: \
  C:/PROGRA~2/SDL2/include/SDL2/SDL_version.h \
  C:/PROGRA~2/SDL2/include/SDL2/begin_code.h \
  C:/PROGRA~2/SDL2/include/SDL2/close_code.h \
+ D:/Projects/C++/Asteroids/include/Vector2.hpp \
  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \

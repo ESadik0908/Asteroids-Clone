@@ -241,7 +241,8 @@ CMakeFiles/Asteroids.dir/src/GameObject.cpp.obj: D:/Projects/C++/Asteroids/src/G
   C:/Program\ Files\ (x86)/SDL2/include/SDL2/close_code.h \
   C:/Program\ Files\ (x86)/SDL2_image/include/SDL2/SDL_image.h \
   D:/Projects/C++/Asteroids/include/Consts.hpp \
-  D:/Projects/C++/Asteroids/include/GameObject.hpp
+  D:/Projects/C++/Asteroids/include/GameObject.hpp \
+  D:/Projects/C++/Asteroids/include/Vector2.hpp
 
 CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Player.cpp \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/adxintrin.h \
@@ -291,6 +292,8 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
@@ -298,17 +301,27 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
@@ -325,6 +338,8 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
@@ -338,21 +353,31 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/bessel_function.tcc \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/ell_integral.tcc \
@@ -367,10 +392,17 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/special_function_util.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h \
@@ -461,6 +493,7 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/setjmp.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/stdarg.h \
@@ -471,9 +504,11 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/strings.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/sys/types.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/wchar.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/wctype.h \
   C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL.h \
   C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_assert.h \
   C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_atomic.h \
@@ -525,8 +560,10 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/Program\ Files\ (x86)/SDL2/include/SDL2/begin_code.h \
   C:/Program\ Files\ (x86)/SDL2/include/SDL2/close_code.h \
   C:/Program\ Files\ (x86)/SDL2_image/include/SDL2/SDL_image.h \
+  D:/Projects/C++/Asteroids/include/Consts.hpp \
   D:/Projects/C++/Asteroids/include/GameObject.hpp \
-  D:/Projects/C++/Asteroids/include/Player.hpp
+  D:/Projects/C++/Asteroids/include/Player.hpp \
+  D:/Projects/C++/Asteroids/include/Vector2.hpp
 
 CMakeFiles/Asteroids.dir/src/SdlWindow.cpp.obj: D:/Projects/C++/Asteroids/src/SdlWindow.cpp \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/adxintrin.h \
@@ -865,7 +902,11 @@ CMakeFiles/Asteroids.dir/src/SdlWindow.cpp.obj: D:/Projects/C++/Asteroids/src/Sd
   D:/Projects/C++/Asteroids/include/Consts.hpp \
   D:/Projects/C++/Asteroids/include/GameObject.hpp \
   D:/Projects/C++/Asteroids/include/Player.hpp \
-  D:/Projects/C++/Asteroids/include/SdlWindow.hpp
+  D:/Projects/C++/Asteroids/include/SdlWindow.hpp \
+  D:/Projects/C++/Asteroids/include/Vector2.hpp
+
+CMakeFiles/Asteroids.dir/src/Vector2.cpp.obj: D:/Projects/C++/Asteroids/src/Vector2.cpp \
+  D:/Projects/C++/Asteroids/include/Vector2.hpp
 
 CMakeFiles/Asteroids.dir/src/main.cpp.obj: D:/Projects/C++/Asteroids/src/main.cpp \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/adxintrin.h \
@@ -1190,7 +1231,8 @@ CMakeFiles/Asteroids.dir/src/main.cpp.obj: D:/Projects/C++/Asteroids/src/main.cp
   C:/Program\ Files\ (x86)/SDL2_image/include/SDL2/SDL_image.h \
   D:/Projects/C++/Asteroids/include/Consts.hpp \
   D:/Projects/C++/Asteroids/include/GameObject.hpp \
-  D:/Projects/C++/Asteroids/include/SdlWindow.hpp
+  D:/Projects/C++/Asteroids/include/SdlWindow.hpp \
+  D:/Projects/C++/Asteroids/include/Vector2.hpp
 
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx5124vnniwintrin.h:
@@ -1483,6 +1525,8 @@ C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/enqcmdintrin.h:
 
+D:/Projects/C++/Asteroids/include/Vector2.hpp:
+
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/math.h:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/f16cintrin.h:
@@ -1568,6 +1612,8 @@ C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_
 D:/Projects/C++/Asteroids/include/Consts.hpp:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/vpclmulqdqintrin.h:
+
+D:/Projects/C++/Asteroids/src/Vector2.cpp:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/waitpkgintrin.h:
 
@@ -1747,9 +1793,9 @@ C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_system.h:
 
 C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_timer.h:
 
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h:
-
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h:
 
 C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_version.h:
 
@@ -1764,6 +1810,8 @@ C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h:
 
@@ -1781,6 +1829,16 @@ C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h:
 
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc:
+
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h:
@@ -1789,6 +1847,8 @@ C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h:
 
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h:
+
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h:
@@ -1796,6 +1856,10 @@ C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/thread:
 
@@ -1809,35 +1873,37 @@ C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale:
 
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception:
+
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h:
 
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc:
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:
 
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new:
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string:
 
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error:
+
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/locale.h:
 
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
+
 D:/Projects/C++/Asteroids/src/SdlWindow.cpp:
 
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc:
-
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h:
 
@@ -1848,26 +1914,6 @@ C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
-
-C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
 
 C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/time.h:
 

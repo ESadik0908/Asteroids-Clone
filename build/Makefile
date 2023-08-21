@@ -200,6 +200,30 @@ src/SdlWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/SdlWindow.cpp.s
 .PHONY : src/SdlWindow.cpp.s
 
+src/Vector2.obj: src/Vector2.cpp.obj
+.PHONY : src/Vector2.obj
+
+# target to build an object file
+src/Vector2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/Vector2.cpp.obj
+.PHONY : src/Vector2.cpp.obj
+
+src/Vector2.i: src/Vector2.cpp.i
+.PHONY : src/Vector2.i
+
+# target to preprocess a source file
+src/Vector2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/Vector2.cpp.i
+.PHONY : src/Vector2.cpp.i
+
+src/Vector2.s: src/Vector2.cpp.s
+.PHONY : src/Vector2.s
+
+# target to generate assembly for a file
+src/Vector2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/Vector2.cpp.s
+.PHONY : src/Vector2.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -242,6 +266,9 @@ help:
 	@echo ... src/SdlWindow.obj
 	@echo ... src/SdlWindow.i
 	@echo ... src/SdlWindow.s
+	@echo ... src/Vector2.obj
+	@echo ... src/Vector2.i
+	@echo ... src/Vector2.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

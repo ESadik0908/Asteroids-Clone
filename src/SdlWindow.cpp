@@ -46,7 +46,7 @@ double SdlWindow::getCurrentTime() {
 
 void SdlWindow::GameLoop(){
 
-    Player* player = new Player(renderer, "../res/player.png", 100, 100, {SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2});
+    Player* player = new Player(renderer, "../res/player.png", 50, 50, {SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2});
 
     gameObjects.push_back(player);
 
@@ -60,4 +60,5 @@ void SdlWindow::GameLoop(){
         std::this_thread::sleep_for(std::chrono::milliseconds(33));
 
     }
+    delete(player);
 }
