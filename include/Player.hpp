@@ -7,7 +7,8 @@
 class Player : public GameObject
 {
 private:
-    SDL_Rect hitbox;
+
+    const Uint8* input = SDL_GetKeyboardState(nullptr);
 public:
     Player(SDL_Renderer *renderer ,std::string imagePath, int width, int height, SDL_FPoint center);
     ~Player();
@@ -15,5 +16,7 @@ public:
     void Draw(SDL_Renderer *renderer) override;
 
     void Update() override;
+
+
 };
 

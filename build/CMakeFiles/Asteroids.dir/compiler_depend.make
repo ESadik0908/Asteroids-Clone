@@ -240,6 +240,7 @@ CMakeFiles/Asteroids.dir/src/GameObject.cpp.obj: D:/Projects/C++/Asteroids/src/G
   C:/Program\ Files\ (x86)/SDL2/include/SDL2/begin_code.h \
   C:/Program\ Files\ (x86)/SDL2/include/SDL2/close_code.h \
   C:/Program\ Files\ (x86)/SDL2_image/include/SDL2/SDL_image.h \
+  D:/Projects/C++/Asteroids/include/Consts.hpp \
   D:/Projects/C++/Asteroids/include/GameObject.hpp
 
 CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Player.cpp \

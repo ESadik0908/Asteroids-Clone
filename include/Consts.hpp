@@ -1,2 +1,3 @@
-static const int SCREEN_WIDTH = 1080;
-static const int SCREEN_HEIGHT = 1920;
+#pragma once
+#define SCREEN_WIDTH 1080
+#define SCREEN_HEIGHT 1920

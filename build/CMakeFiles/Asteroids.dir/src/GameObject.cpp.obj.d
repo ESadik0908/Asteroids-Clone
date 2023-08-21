@@ -241,4 +241,5 @@ CMakeFiles/Asteroids.dir/src/GameObject.cpp.obj: \
  C:/PROGRA~2/SDL2_I~1/include/SDL2/SDL_image.h \
  C:/PROGRA~2/SDL2/include/SDL2/SDL_version.h \
  C:/PROGRA~2/SDL2/include/SDL2/begin_code.h \
- C:/PROGRA~2/SDL2/include/SDL2/close_code.h
+ C:/PROGRA~2/SDL2/include/SDL2/close_code.h \
+ D:/Projects/C++/Asteroids/include/Consts.hpp
