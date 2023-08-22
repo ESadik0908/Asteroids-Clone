@@ -1,12 +1,13 @@
 #include <cmath>
-#include <algorithm>
+#include <iostream>
+#include <string>
 #include "Player.hpp"
 #include "SDL_image.h"
 #include "SDL.h"
 #include "string"
 #include "Vector2.hpp"
-#include <iostream>
-#include <string>
+#include "MathHelper.hpp"
+
 
 Player::Player(
     SDL_Renderer *renderer ,
@@ -30,11 +31,6 @@ Player::~Player()
 void Player::Draw(SDL_Renderer *renderer){
     SDL_SetRenderTarget(renderer, texture);
     SDL_RenderCopyEx(renderer, texture, NULL, &hitbox, angle, NULL, SDL_FLIP_NONE);
-    SDL_SetRenderDrawColor(renderer, 255 , 0, 0, 255);
-    SDL_RenderDrawRect(renderer, &hitbox);
-    SDL_SetRenderDrawColor(renderer, 255 , 255, 255, 255);
-    SDL_RenderDrawPoint(renderer, hitbox.x, hitbox.y);
-    SDL_RenderDrawPoint(renderer, position.x, position.y);
 }
 
 int Player::ConstrainAngle(int _angle){
@@ -60,14 +56,7 @@ void Player::Decelerate() {
     }
 }
 
-
 void Player::Update(){
-
-    std::string str1 = std::to_string(velocity.x);
-    std::string str2 = std::to_string(velocity.y);
-    std::string str = "velocity x: " + str1 + " velocity y: " + str2;
-    SDL_Log(str.c_str());
-
     if(input[SDL_SCANCODE_RIGHT]){
         angle += rotation_speed;
     }
@@ -76,21 +65,41 @@ void Player::Update(){
         angle -= rotation_speed;
     }
 
-    double angleRadians = angle * M_PI / 180.0;
-    
-    // angle = ConstrainAngle(angle);
-    direction.x = std::sin(angleRadians);
+    angle = ConstrainAngle(angle);
 
+    float angleRadians = angle * M_PI / 180.0;
 
+    int sign_x = Sign(sin(angleRadians));
+    int sign_y = Sign(cos(angleRadians));
 
-    direction.y = -cos(angleRadians);
+    direction.x = sign_x * pow(sin(angleRadians), 2);
+    direction.y = -(sign_y * pow(cos(angleRadians), 2));
 
 
 
     if(input[SDL_SCANCODE_UP]){
-        velocity.x += (direction.x * move_speed);
-        velocity.y += (direction.y * move_speed);
+        velocity.x += direction.x;
+        velocity.y += direction.y;
+        if(abs(velocity.x) + abs(velocity.y) > max_speed){
+            velocity.x = direction.x * max_speed;
+            velocity.y = direction.y * max_speed;
+        }        
     }
+
+    if(input[SDL_SCANCODE_DOWN]){
+        velocity.x -= direction.x;
+        velocity.y -= direction.y;
+
+        if(abs(velocity.x) + abs(velocity.y) > max_speed){
+            velocity.x = direction.x * max_speed;
+            velocity.y = direction.y * max_speed;
+        }
+    }
+
+    std::string str1 = " velocity x: " + std::to_string(velocity.x);
+    std::string str2 = " velocity y: " + std::to_string(velocity.y);
+    SDL_Log((str1 + str2).c_str());
+
 
     position += velocity;
 

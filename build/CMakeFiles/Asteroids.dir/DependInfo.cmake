@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/C++/Asteroids/src/GameObject.cpp" "CMakeFiles/Asteroids.dir/src/GameObject.cpp.obj" "gcc" "CMakeFiles/Asteroids.dir/src/GameObject.cpp.obj.d"
+  "D:/Projects/C++/Asteroids/src/MathHelper.cpp" "CMakeFiles/Asteroids.dir/src/MathHelper.cpp.obj" "gcc" "CMakeFiles/Asteroids.dir/src/MathHelper.cpp.obj.d"
   "D:/Projects/C++/Asteroids/src/Player.cpp" "CMakeFiles/Asteroids.dir/src/Player.cpp.obj" "gcc" "CMakeFiles/Asteroids.dir/src/Player.cpp.obj.d"
   "D:/Projects/C++/Asteroids/src/SdlWindow.cpp" "CMakeFiles/Asteroids.dir/src/SdlWindow.cpp.obj" "gcc" "CMakeFiles/Asteroids.dir/src/SdlWindow.cpp.obj.d"
   "D:/Projects/C++/Asteroids/src/Vector2.cpp" "CMakeFiles/Asteroids.dir/src/Vector2.cpp.obj" "gcc" "CMakeFiles/Asteroids.dir/src/Vector2.cpp.obj.d"

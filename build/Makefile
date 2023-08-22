@@ -152,6 +152,30 @@ src/GameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/GameObject.cpp.s
 .PHONY : src/GameObject.cpp.s
 
+src/MathHelper.obj: src/MathHelper.cpp.obj
+.PHONY : src/MathHelper.obj
+
+# target to build an object file
+src/MathHelper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/MathHelper.cpp.obj
+.PHONY : src/MathHelper.cpp.obj
+
+src/MathHelper.i: src/MathHelper.cpp.i
+.PHONY : src/MathHelper.i
+
+# target to preprocess a source file
+src/MathHelper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/MathHelper.cpp.i
+.PHONY : src/MathHelper.cpp.i
+
+src/MathHelper.s: src/MathHelper.cpp.s
+.PHONY : src/MathHelper.s
+
+# target to generate assembly for a file
+src/MathHelper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Asteroids.dir\build.make CMakeFiles/Asteroids.dir/src/MathHelper.cpp.s
+.PHONY : src/MathHelper.cpp.s
+
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
 
@@ -260,6 +284,9 @@ help:
 	@echo ... src/GameObject.obj
 	@echo ... src/GameObject.i
 	@echo ... src/GameObject.s
+	@echo ... src/MathHelper.obj
+	@echo ... src/MathHelper.i
+	@echo ... src/MathHelper.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s

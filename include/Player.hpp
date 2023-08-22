@@ -14,7 +14,7 @@ private:
 
     int move_speed = 1;
     int rotation_speed = 5;
-    int max_speed = 5;
+    int max_speed = 10;
 
     Vector2 direction = VECTOR2_UP;
 public:
@@ -28,6 +28,5 @@ public:
     int ConstrainAngle(int _angle);
 
     void Decelerate();
-
 };
 

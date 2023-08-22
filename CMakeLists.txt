@@ -8,6 +8,7 @@ add_executable(Asteroids
     src/GameObject.cpp
     src/Player.cpp
     src/Vector2.cpp
+    src/MathHelper.cpp
 )
 
 if(NOT PNG AND WIN32 AND NOT MSVC)

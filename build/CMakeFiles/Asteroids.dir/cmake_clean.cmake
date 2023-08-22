@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "Asteroids.pdb"
   "CMakeFiles/Asteroids.dir/src/GameObject.cpp.obj"
   "CMakeFiles/Asteroids.dir/src/GameObject.cpp.obj.d"
+  "CMakeFiles/Asteroids.dir/src/MathHelper.cpp.obj"
+  "CMakeFiles/Asteroids.dir/src/MathHelper.cpp.obj.d"
   "CMakeFiles/Asteroids.dir/src/Player.cpp.obj"
   "CMakeFiles/Asteroids.dir/src/Player.cpp.obj.d"
   "CMakeFiles/Asteroids.dir/src/SdlWindow.cpp.obj"
