@@ -1,4 +1,5 @@
-#include <math.h>
+#include <cmath>
+#include <algorithm>
 #include "Player.hpp"
 #include "SDL_image.h"
 #include "SDL.h"
@@ -43,42 +44,52 @@ int Player::ConstrainAngle(int _angle){
     return _angle;
 }
 
+void Player::Decelerate() {
+
+
+    if (velocity.x < 0) {
+        velocity.x++;
+    } else if (velocity.x > 0) {
+        velocity.x--;
+    }
+
+    if (velocity.y < 0) {
+        velocity.y++;
+    } else if (velocity.y > 0) {
+        velocity.y--;
+    }
+}
+
+
 void Player::Update(){
 
-    if(velocity.x != 0){
-        velocity.x -= 0.5;
-    }
-
-    if(velocity.y != 0){
-        velocity.y -= 0.5;
-    }
-
-
+    std::string str1 = std::to_string(velocity.x);
+    std::string str2 = std::to_string(velocity.y);
+    std::string str = "velocity x: " + str1 + " velocity y: " + str2;
+    SDL_Log(str.c_str());
 
     if(input[SDL_SCANCODE_RIGHT]){
         angle += rotation_speed;
-        
-        angle = ConstrainAngle(angle);
     }
 
     if(input[SDL_SCANCODE_LEFT]){
         angle -= rotation_speed;
-        angle = ConstrainAngle(angle);
     }
+
+    double angleRadians = angle * M_PI / 180.0;
     
+    // angle = ConstrainAngle(angle);
+    direction.x = std::sin(angleRadians);
 
-    direction.x = cos(angle);
 
-    std::string str = std::to_string(direction.x);
-    SDL_Log(str.c_str());
 
-    direction.y = sin(angle);
+    direction.y = -cos(angleRadians);
+
+
 
     if(input[SDL_SCANCODE_UP]){
-        if(velocity.x + velocity.y < max_speed){
-            velocity.x += (moves_speed * direction.x);
-            velocity.y += (moves_speed * direction.y);
-        }
+        velocity.x += (direction.x * move_speed);
+        velocity.y += (direction.y * move_speed);
     }
 
     position += velocity;

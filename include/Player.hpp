@@ -12,7 +12,7 @@ private:
     int angle = 0;
     Vector2 velocity = VECTOR2_ZERO;
 
-    int moves_speed = 1;
+    int move_speed = 1;
     int rotation_speed = 5;
     int max_speed = 5;
 
@@ -26,6 +26,8 @@ public:
     void Update() override;
 
     int ConstrainAngle(int _angle);
+
+    void Decelerate();
 
 };
 
