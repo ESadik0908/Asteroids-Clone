@@ -15,7 +15,7 @@ private:
     float move_speed = 2;
     int rotation_speed = 5;
     int max_speed = 20;
-    float friction = 0.1;
+    float friction = 0.05;
 
     Vector2 direction = VECTOR2_UP;
 public:

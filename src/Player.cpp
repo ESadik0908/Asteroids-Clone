@@ -42,29 +42,26 @@ int Player::ConstrainAngle(int _angle){
 }
 
 void Player::Decelerate() {
-    if(abs(velocity.y) < 1){
-        velocity.y = 0;
-    }
-
-    if(abs(velocity.x) < 1){
+    
+    if(abs(velocity.x) < 0.1){
         velocity.x = 0;
     }
 
-    if (velocity.x < 0) {
-        velocity.x += friction;
-    } else if (velocity.x > 0) {
-        velocity.x -= friction;
+    if(abs(velocity.y) < 0.1){
+        velocity.y = 0;
     }
 
-    if (velocity.y < 0) {
-        velocity.y += friction;
-    } else if (velocity.y > 0) {
-        velocity.y -= friction;
+    if(velocity.x != 0){
+        velocity.x = lerp(velocity.x, 0, friction);
+    }
+
+    if(velocity.y !=  0){
+       velocity.y = lerp(velocity.y, 0, friction);
     }
 }
 
 void Player::Update(){
-    
+
     if(input[SDL_SCANCODE_RIGHT]){
         angle += rotation_speed;
     }
@@ -101,11 +98,6 @@ void Player::Update(){
         Decelerate();
     }
 
-    std::string str1 = " velocity x: " + std::to_string(velocity.x);
-    std::string str2 = " velocity y: " + std::to_string(velocity.y);
-    SDL_Log((str1 + str2).c_str());
-
     position += velocity;
-
     UpdatePoints();
 }
