@@ -12,9 +12,10 @@ private:
     int angle = 0;
     Vector2 velocity = VECTOR2_ZERO;
 
-    int move_speed = 1;
+    float move_speed = 2;
     int rotation_speed = 5;
-    int max_speed = 10;
+    int max_speed = 20;
+    float friction = 0.1;
 
     Vector2 direction = VECTOR2_UP;
 public:

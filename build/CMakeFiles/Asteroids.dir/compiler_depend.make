@@ -348,6 +348,7 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
@@ -476,6 +477,7 @@ CMakeFiles/Asteroids.dir/src/Player.cpp.obj: D:/Projects/C++/Asteroids/src/Playe
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+  C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/assert.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
   C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
@@ -1759,11 +1761,15 @@ C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_guid.h:
 
 C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_haptic.h:
 
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert:
+
 C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_hints.h:
 
 C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_joystick.h:
 
 C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_loadso.h:
+
+C:/MinGW/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/assert.h:
 
 C:/Program\ Files\ (x86)/SDL2/include/SDL2/SDL_main.h:
 

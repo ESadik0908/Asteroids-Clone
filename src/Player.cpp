@@ -1,3 +1,4 @@
+#include <cassert>
 #include <cmath>
 #include <iostream>
 #include <string>
@@ -41,22 +42,29 @@ int Player::ConstrainAngle(int _angle){
 }
 
 void Player::Decelerate() {
+    if(abs(velocity.y) < 1){
+        velocity.y = 0;
+    }
 
+    if(abs(velocity.x) < 1){
+        velocity.x = 0;
+    }
 
     if (velocity.x < 0) {
-        velocity.x++;
+        velocity.x += friction;
     } else if (velocity.x > 0) {
-        velocity.x--;
+        velocity.x -= friction;
     }
 
     if (velocity.y < 0) {
-        velocity.y++;
+        velocity.y += friction;
     } else if (velocity.y > 0) {
-        velocity.y--;
+        velocity.y -= friction;
     }
 }
 
 void Player::Update(){
+    
     if(input[SDL_SCANCODE_RIGHT]){
         angle += rotation_speed;
     }
@@ -76,30 +84,26 @@ void Player::Update(){
     direction.y = -(sign_y * pow(cos(angleRadians), 2));
 
 
-
     if(input[SDL_SCANCODE_UP]){
-        velocity.x += direction.x;
-        velocity.y += direction.y;
-        if(abs(velocity.x) + abs(velocity.y) > max_speed){
-            velocity.x = direction.x * max_speed;
-            velocity.y = direction.y * max_speed;
+        velocity.x += direction.x * move_speed;
+        velocity.y += direction.y * move_speed;
+        if(abs(velocity.x) + abs(velocity.y) >= max_speed){
+
+            velocity.x -= direction.x * move_speed;
+            velocity.y -= direction.y * move_speed;
+
+            velocity.x = lerp(velocity.x, direction.x * max_speed, 0.05);
+            velocity.y = lerp(velocity.y, direction.y * max_speed, 0.05);
         }        
     }
-
-    if(input[SDL_SCANCODE_DOWN]){
-        velocity.x -= direction.x;
-        velocity.y -= direction.y;
-
-        if(abs(velocity.x) + abs(velocity.y) > max_speed){
-            velocity.x = direction.x * max_speed;
-            velocity.y = direction.y * max_speed;
-        }
+    else
+    {
+        Decelerate();
     }
 
     std::string str1 = " velocity x: " + std::to_string(velocity.x);
     std::string str2 = " velocity y: " + std::to_string(velocity.y);
     SDL_Log((str1 + str2).c_str());
-
 
     position += velocity;
 
