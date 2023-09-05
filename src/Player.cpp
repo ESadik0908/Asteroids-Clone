@@ -34,40 +34,31 @@ void Player::Draw(SDL_Renderer *renderer){
     SDL_RenderCopyEx(renderer, texture, NULL, &hitbox, angle, NULL, SDL_FLIP_NONE);
 }
 
-int Player::ConstrainAngle(int _angle){
+float Player::ConstrainAngle(float _angle){
     _angle = fmod(_angle,360);
     if (_angle < 0)
         _angle += 360;
     return _angle;
 }
 
-void Player::Decelerate() {
-    
-    if(abs(velocity.x) < 0.1){
-        velocity.x = 0;
-    }
-
-    if(abs(velocity.y) < 0.1){
-        velocity.y = 0;
-    }
-
+void Player::Decelerate(double delta_time) {
     if(velocity.x != 0){
-        velocity.x = lerp(velocity.x, 0, friction);
+        velocity.x -= direction.x * friction * delta_time;
     }
 
-    if(velocity.y !=  0){
-       velocity.y = lerp(velocity.y, 0, friction);
+    if(velocity.y != 0){
+        velocity.y -= direction.y * friction * delta_time;
     }
 }
 
-void Player::Update(){
+void Player::Update(double delta_time){
 
     if(input[SDL_SCANCODE_RIGHT]){
-        angle += rotation_speed;
+        angle += rotation_speed * delta_time;
     }
 
     if(input[SDL_SCANCODE_LEFT]){
-        angle -= rotation_speed;
+        angle -= rotation_speed * delta_time;
     }
 
     angle = ConstrainAngle(angle);
@@ -82,20 +73,20 @@ void Player::Update(){
 
 
     if(input[SDL_SCANCODE_UP]){
-        velocity.x += direction.x * move_speed;
-        velocity.y += direction.y * move_speed;
+        velocity.x += direction.x * move_speed * delta_time;
+        velocity.y += direction.y * move_speed * delta_time;
         if(abs(velocity.x) + abs(velocity.y) >= max_speed){
 
-            velocity.x -= direction.x * move_speed;
-            velocity.y -= direction.y * move_speed;
+            velocity.x -= direction.x * move_speed * delta_time;
+            velocity.y -= direction.y * move_speed * delta_time;
 
-            velocity.x = lerp(velocity.x, direction.x * max_speed, 0.05);
-            velocity.y = lerp(velocity.y, direction.y * max_speed, 0.05);
+            velocity.x = lerp(velocity.x, direction.x * velocity.x, 0.05);
+            velocity.y = lerp(velocity.y, direction.y * velocity.y, 0.05);
         }        
     }
     else
     {
-        Decelerate();
+        Decelerate(delta_time);
     }
 
     position += velocity;

@@ -13,7 +13,7 @@ class SdlWindow{
         // Destructor
         ~SdlWindow();
 
-        void RenderGameObjects(std::vector<GameObject*> gameObjects);
+        void RenderGameObjects(std::vector<GameObject*> game_objects, double delta_time);
 
         void GameLoop();
 
@@ -25,5 +25,5 @@ class SdlWindow{
         SDL_Window *window = NULL;
         SDL_Renderer *renderer = NULL;
         SDL_Event event;
-        std::vector<GameObject*> gameObjects;
+        std::vector<GameObject*> game_objects;
 };

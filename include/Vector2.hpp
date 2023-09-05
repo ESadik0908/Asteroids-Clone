@@ -12,6 +12,8 @@ public:
     ~Vector2();
 
     void operator +=(const Vector2 &b);
+
+    void operator *(const double &b);
 };
 
 

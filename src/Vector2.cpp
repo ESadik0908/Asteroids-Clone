@@ -16,3 +16,8 @@ void Vector2::operator+=(const Vector2 &b){
     this->x += b.x;
     this->y += b.y;
 }
+
+void Vector2::operator*(const double &b){
+    this->x * b;
+    this->y * b;
+}

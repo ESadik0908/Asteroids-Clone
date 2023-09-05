@@ -9,13 +9,13 @@ class Player : public GameObject
 {
 private:
     const Uint8* input = SDL_GetKeyboardState(nullptr);
-    int angle = 0;
+    float angle = 0;
     Vector2 velocity = VECTOR2_ZERO;
 
-    float move_speed = 2;
-    int rotation_speed = 5;
+    float move_speed = 5;
+    float rotation_speed = 300;
     int max_speed = 20;
-    float friction = 0.05;
+    float friction = 5;
 
     Vector2 direction = VECTOR2_UP;
 public:
@@ -24,10 +24,10 @@ public:
 
     void Draw(SDL_Renderer *renderer) override;
 
-    void Update() override;
+    void Update(double delta_time) override;
 
-    int ConstrainAngle(int _angle);
+    float ConstrainAngle(float _angle);
 
-    void Decelerate();
+    void Decelerate(double delta_time);
 };
 

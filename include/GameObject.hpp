@@ -19,7 +19,7 @@ public:
 
     virtual void Draw(SDL_Renderer *renderer) = 0;
     
-    virtual void Update() = 0;
+    virtual void Update(double delta_time) = 0;
 
     void UpdatePoints();
 };
