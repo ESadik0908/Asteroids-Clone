@@ -42,12 +42,35 @@ float Player::ConstrainAngle(float _angle){
 }
 
 void Player::Decelerate(double delta_time) {
-    if(velocity.x != 0){
-        velocity.x -= direction.x * friction * delta_time;
+    std::string vel_x = std::to_string(velocity.x);
+    std::string vel_y = std::to_string(velocity.y);
+
+    std::string str = "velocity_x: " + vel_x + " Velocity_y: " + vel_y;
+
+    SDL_Log(str.c_str());
+
+    if(abs(velocity.x) < 0.001){
+        velocity.x = 0;
     }
 
-    if(velocity.y != 0){
-        velocity.y -= direction.y * friction * delta_time;
+     if(abs(velocity.y) < 0.001){
+        velocity.y = 0;
+    }
+
+    if(velocity.x > 0){
+        velocity.x -= friction * delta_time;
+    }
+
+    if(velocity.y > 0){
+        velocity.y -= friction * delta_time;
+    }
+
+    if(velocity.x < 0){
+        velocity.x += friction * delta_time;
+    }
+
+    if(velocity.y < 0){
+        velocity.y += friction * delta_time;
     }
 }
 
@@ -80,11 +103,11 @@ void Player::Update(double delta_time){
             velocity.x -= direction.x * move_speed * delta_time;
             velocity.y -= direction.y * move_speed * delta_time;
 
-            velocity.x = lerp(velocity.x, direction.x * velocity.x, 0.05);
-            velocity.y = lerp(velocity.y, direction.y * velocity.y, 0.05);
+            velocity.x = lerp(velocity.x, direction.x * velocity.x, delta_time);
+            velocity.y = lerp(velocity.y, direction.y * velocity.y, delta_time);
         }        
     }
-    else
+    if(!input[SDL_SCANCODE_UP])
     {
         Decelerate(delta_time);
     }
