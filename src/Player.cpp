@@ -42,36 +42,36 @@ float Player::ConstrainAngle(float _angle){
 }
 
 void Player::Decelerate(double delta_time) {
-    std::string vel_x = std::to_string(velocity.x);
-    std::string vel_y = std::to_string(velocity.y);
 
-    std::string str = "velocity_x: " + vel_x + " Velocity_y: " + vel_y;
+    float zero = 0;
 
-    SDL_Log(str.c_str());
+    int sign_x = Sign(velocity.x);
+    int sign_y = Sign(velocity.y);
 
-    if(abs(velocity.x) < 0.001){
-        velocity.x = 0;
-    }
+    float total_speed = abs(velocity.x) + abs(velocity.y);
 
-     if(abs(velocity.y) < 0.001){
-        velocity.y = 0;
-    }
+    float magnitude_x = abs(velocity.x) / total_speed;
+    float magnitude_y = abs(velocity.y) / total_speed;
+    
+    float x_deceleration = magnitude_x * friction;
+    float y_deceleration = magnitude_y * friction;
 
     if(velocity.x > 0){
-        velocity.x -= friction * delta_time;
+        velocity.x -= x_deceleration * delta_time;
     }
 
     if(velocity.y > 0){
-        velocity.y -= friction * delta_time;
+        velocity.y -= y_deceleration * delta_time;
     }
 
     if(velocity.x < 0){
-        velocity.x += friction * delta_time;
+        velocity.x += x_deceleration * delta_time;
     }
 
     if(velocity.y < 0){
-        velocity.y += friction * delta_time;
+        velocity.y += y_deceleration * delta_time;
     }
+    
 }
 
 void Player::Update(double delta_time){
@@ -112,6 +112,12 @@ void Player::Update(double delta_time){
         Decelerate(delta_time);
     }
 
+    std::string vel_x = std::to_string(velocity.x);
+    std::string vel_y = std::to_string(velocity.y);
+
+    std::string str = "velocity_x: " + vel_x + " Velocity_y: " + vel_y;
+
+    SDL_Log(str.c_str());
     position += velocity;
     UpdatePoints();
 }
